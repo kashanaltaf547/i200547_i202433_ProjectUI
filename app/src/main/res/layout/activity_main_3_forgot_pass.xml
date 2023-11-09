@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2_SignIn">
+
+
+    <ImageView
+        android:id="@+id/a1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="-15dp"
+        android:src="@drawable/vector1"/>
+
+    <ImageView
+        android:id="@+id/a2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/vector2"
+        android:layout_alignParentBottom="true" />
+
+
+    <ImageView
+        android:id="@+id/a3"
+        android:layout_width="314dp"
+        android:layout_height="316dp"
+        android:layout_below="@id/a1"
+        android:layout_marginLeft="-45dp"
+        android:layout_marginTop="-10dp"
+        android:src="@drawable/vector3" />
+
+
+    <TextView
+        android:id="@+id/a4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MedTrack"
+        android:textStyle="bold"
+        android:textSize="55sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp" />
+
+
+    <TextView
+        android:id="@+id/a5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password"
+        android:layout_below="@id/a4"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/a7"
+        android:layout_marginTop="70dp"
+        android:layout_below="@id/a5">
+        <TextView
+            android:id="@+id/a6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Email"
+            android:textSize="25sp"
+            android:textColor="#111111"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="25dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/a8"
+        android:layout_below="@id/a7">
+
+
+        <EditText
+            android:id="@+id/a9"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/buttonbyme2"
+            android:padding="10dp"
+            android:paddingLeft="15dp"
+            android:paddingBottom="8dp"
+            android:drawableLeft="@drawable/baseline_email_24"
+            android:elevation="10dp"
+            android:hint=" Email"
+            android:inputType="textEmailAddress"
+            android:textColor="#5BF4EEEE"
+            android:textSize="20dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/a18"
+        android:layout_below="@id/a8"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/vector4"
+            android:contentDescription="SignIn Button"
+            android:id="@+id/a15"
+            android:layout_below="@id/v14"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/white"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

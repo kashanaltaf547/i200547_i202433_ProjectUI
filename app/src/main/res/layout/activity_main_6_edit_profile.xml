@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity2_SignIn">
+
+
+    <ImageView
+        android:id="@+id/f1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="-15dp"
+        android:src="@drawable/vector1" />
+
+    <ImageView
+        android:id="@+id/f2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/vector2" />
+
+
+    <ImageView
+        android:id="@+id/f3"
+        android:layout_width="314dp"
+        android:layout_height="316dp"
+        android:layout_below="@id/f1"
+        android:layout_marginLeft="-45dp"
+        android:layout_marginTop="-10dp"
+        android:src="@drawable/vector3" />
+
+    <TextView
+        android:id="@+id/f4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Edit Profile"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/f5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/fully_transparent"
+        android:contentDescription="Button to go back"
+        android:src="@drawable/img" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        app:shapeAppearanceOverlay="@style/circular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeWidth="5dp"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/f6"
+        android:layout_width="145dp"
+        android:layout_height="145dp"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="60dp"/>
+
+    <ImageButton
+        android:id="@+id/f7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_camera_alt_24"
+        android:backgroundTint="@color/fully_transparent"
+        android:contentDescription="Camera"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="225dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/f8"
+        android:layout_below="@id/f6">
+        <TextView
+            android:id="@+id/f9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="20sp"
+            android:textColor="#111111"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="25dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/f10"
+        android:layout_below="@id/f8">
+
+        <EditText
+            android:id="@+id/f11"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/buttonbyme2"
+            android:padding="10dp"
+            android:paddingLeft="15dp"
+            android:paddingBottom="8dp"
+            android:text="Melissa Peters"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:ignore="TouchTargetSizeCheck"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/f12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:layout_below="@id/f10"
+        android:textSize="20sp"
+        android:textColor="#111111"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/f13"
+        android:layout_below="@id/f12">
+
+        <EditText
+            android:id="@+id/f14"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/buttonbyme2"
+            android:padding="10dp"
+            android:paddingLeft="15dp"
+            android:paddingBottom="8dp"
+            android:text="***********"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:ignore="TouchTargetSizeCheck"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/f15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_below="@id/f13"
+        android:textSize="20sp"
+        android:textColor="#111111"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/f16"
+        android:layout_below="@id/f15">
+
+        <EditText
+            android:id="@+id/f17"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/buttonbyme2"
+            android:padding="10dp"
+            android:paddingLeft="15dp"
+            android:paddingBottom="8dp"
+            android:text="mPeters124@gmail.com"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:ignore="TouchTargetSizeCheck"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/f18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date Of Birth"
+        android:layout_below="@id/f16"
+        android:textSize="20sp"
+        android:textColor="#111111"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/f19"
+        android:layout_below="@id/f18">
+
+        <EditText
+            android:id="@+id/f20"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/buttonbyme2"
+            android:padding="10dp"
+            android:paddingLeft="15dp"
+            android:paddingBottom="8dp"
+            android:text="01 / 14 / 2001"
+            android:inputType="phone|number"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:ignore="TouchTargetSizeCheck"/>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/f22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="@color/fully_transparent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:cardElevation="10dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp">
+
+        <ImageView
+            android:id="@+id/f21"
+            android:layout_width="250dp"
+            android:layout_height="55dp"
+            android:src="@drawable/img2"
+            android:clickable="true"
+            android:contentDescription="Save changes"
+            tools:ignore="TouchTargetSizeCheck"
+            android:backgroundTint="@color/fully_transparent" />
+
+        <Button
+            android:id="@+id/f23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/fully_transparent"
+            android:text="Save Changes"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
